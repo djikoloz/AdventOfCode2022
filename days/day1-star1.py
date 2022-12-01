@@ -3,7 +3,7 @@
 relative_path = './inputs/input-day1-2022'
 with open(relative_path,"r") as file_handle:
     lines_list = file_handle.readlines()
-    print(len(lines_list))
+    print(len(lines_list)," Lines counted")
     elf_sums = []
     sumblock = []
     for i in range(0,len(lines_list)):
@@ -12,6 +12,6 @@ with open(relative_path,"r") as file_handle:
         elif lines_list[i] == "\n":
             elf_sums.append(sum(sumblock))
             sumblock = []
-    print("Highest Elf: "+sorted(elf_sums)[-1])
-    print("Jeeeh Star1!")
+print("Highest Elf-score: ",sorted(elf_sums)[-1])
+print("Jeeeh Star1!")
 
