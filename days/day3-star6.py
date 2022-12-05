@@ -14,7 +14,7 @@ with open(relative_path,"r") as file_handle:
             part1 = (lines_list[i])
             part2 = (lines_list[i+1])
             part3 = (lines_list[i+2])
-            a=list(set(part1)&set(part2)&set(part3))
+            a=list(set(part1.strip())&set(part2.strip())&set(part3.strip()))
             print("Common letter is:")
             print("list:",a)
             for char in a:
