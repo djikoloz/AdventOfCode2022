@@ -21,9 +21,9 @@ with open(relative_path,"r") as file_handle:
                 print("Found:",char)
                 score = 0
                 if(char.islower()):
-                    score += (ord(char)-96)
+                    score = (ord(char)-96)
                 if(char.isupper()):
-                    score += (ord(char)-38)
+                    score = (ord(char)-38)
                 print("Character",char,"heeft score",score)
                 totalScore += score
     print("# Totaal:",totalScore)
